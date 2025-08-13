@@ -1,77 +1,10 @@
 site_name: Husk Logistics System
-site_description: Documentation for the Husk Trading Fleet Management System
-site_url: https://your-org.github.io/husk-logistics-system/
-repo_url: https://github.com/your-org/husk-logistics-system
+theme: material
 
-# Theme (Material for MkDocs)
-theme:
-  name: material
-  features:
-    - navigation.tabs
-    - navigation.indexes
-    - toc.integrate
-  palette:
-    - scheme: default
-      primary: brown
-      accent: deep orange
-      toggle:
-        icon: material/weather-sunny
-        name: Switch to dark mode
-    - scheme: slate
-      primary: orange
-      accent: yellow
-      toggle:
-        icon: material/weather-night
-        name: Switch to light mode
-
-# Extensions
-markdown_extensions:
-  - admonition
-  - toc:
-      permalink: true
-  - tables
-  - codehilite
-  - footnotes
-  - attr_list
-
-# Navigation
 nav:
   - Home: index.md
-  - Architecture:
-      - Overview: architecture/overview.md
-      - System Diagram: architecture/diagrams.md
-  - Modules:
-      - Load Management: modules/load-mgmt.md
-      - Fleet Management: modules/fleet-mgmt.md
-      - HR Management: modules/hr-mgmt.md
-  - API Reference:
-      - Swagger Docs: api/swagger.md
-      - Postman Collection: api/postman.md
-  - Development:
-      - Setup Guide: dev/setup.md
-      - Deployment: dev/deployment.md
-  - User Guide: user-guide.md
+  - API: api.md          # Link to SpringDoc-generated HTML
+  - Deployment: deploy.md
 
-# Plugins
 plugins:
   - search
-  - git-revision-date-localized
-  - mkdocstrings:
-      handlers:
-        python:
-          options:
-            docstring_style: google
-
-# Customization
-extra:
-  analytics:
-    provider: google
-    property: UA-XXXXX-Y
-  social:
-    - icon: fontawesome/brands/github
-      link: https://github.com/your-org
-    - icon: fontawesome/brands/twitter
-      link: https://twitter.com/your-org
-
-# Build options
-strict: true
